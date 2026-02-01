@@ -1,0 +1,4 @@
+pyTelegramBotAPI
+flask
+gunicorn
+python-telegram-bot --pre
