@@ -204,7 +204,7 @@ async def button_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
         product = PRODUCTS[district][idx]
         method = "💳 карткою" if data.startswith("pay_card_") else "🌐 криптовалютою"
         await query.message.delete()
-        await query.mesage.reply_text(
+        await query.message.reply_text(
             f"{method} за *{product['name']}* ({product['price']}₴).\n\n"
             f"Зв'яжіться з менеджером: {ADMIN_LINK}",
             parse_mode=ParseMode.MARKDOWN
